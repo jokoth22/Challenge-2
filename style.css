@@ -1,27 +1,23 @@
 * {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
 }
 
 body {
+    font-family: Arial;
+    margin: 0; 
     background-color: #5a0865;
 }
 
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #c83ce0;
-    color: #0c0c0c;
+    background-color: #2914c3;
+    color: #f4efef;
 }
 
 header h1 {
     display: inline-block;
     font-size: 48px;
-}
-
-header h1 .seo {
-    color: #d9dcd6;
 }
 
 header nav {
@@ -32,11 +28,15 @@ header nav {
     font-size: 20px;
 }
 
+nav {
+    display: flex;
+}
+
 header nav ul {
     list-style-type: none;
 }
 
-header nav ul li {
+nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
@@ -50,13 +50,25 @@ p {
     font-size: 16px;
 }
 
-img {
-    max-height: 225px;
+.about-me-card {
+    padding-top: 50px;
+    margin-bottom: 70px;
+    margin-right: 20px;
+    background-color: #c83ce0;
+    color: snow;
+    text-align: calc();
+    
 }
 
-h2 {
+.about-me-card img {
+    max-height: 200px;
+    min-width: 200px;
+    padding: auto;
+}
+
+.about-me-card h2 {
     margin-bottom: 20px;
-    font-size: 36px;
+    font-size: 24px;
 }
 
 .float-left {
@@ -70,25 +82,39 @@ h2 {
 }
 
 main {
-    width: 75%;
+    width: auto;
     display: inline-block;
     margin-left: 20px;
     flex-wrap: wrap;
 }
 
-.portfolio-card {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 100px 200px;
-    justify-content: space-evenly;
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 60px;
+    background-color: #c83ce0;
+    color: #fff;
 }
 
+.item1 img{
+    max-width: 4px;
+}
+
+
 section {
+    flex: 1 0 0;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 5px;
     margin-bottom: 50px;
+    margin-top: 100px;
     padding: 50px;
-    height:auto;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
+    height:fit-content;
+    width:fit-content;
+    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
 }
 
