@@ -76,6 +76,12 @@ main {
     flex-wrap: wrap;
 }
 
+.portfolio-card {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px 200px;
+    justify-content: space-evenly;
+}
 
 section {
     margin-bottom: 50px;
