@@ -50,6 +50,13 @@ p {
     font-size: 16px;
 }
 
+.about-me-card img {
+    max-height: 200px;
+    min-width: 100%;
+    padding: auto;
+}
+
+
 .about-me-card {
     padding-top: 50px;
     margin-bottom: 70px;
@@ -64,13 +71,14 @@ p {
     max-height: 200px;
     min-width: 200px;
     padding: auto;
+    float: left;
 }
 
 .about-me-card h2 {
     margin-bottom: 20px;
     font-size: 24px;
 }
-
+*/
 .float-left {
     float: left;
     margin-right: 25px;
@@ -98,13 +106,19 @@ article {
     color: #fff;
 }
 
-.item1 img{
-    max-width: 4px;
+article section:nth-child(1){
+    width: 100%;
 }
 
+article section:nth-child(2) {
+    width: 100%;
+}
+
+article section:nth-child(2) {
+    width: 100%;
+}
 
 section {
-    flex: 1 0 0;
     padding: 10px;
     text-align: center;
     border-style: solid;
@@ -118,11 +132,12 @@ section {
     color: #ffffff;
 }
 
+
 footer ul li {
     display: inline-block;
     margin-left: 25px;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 24px;
 }
 /*
 footer {
